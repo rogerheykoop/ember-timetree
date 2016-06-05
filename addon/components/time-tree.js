@@ -662,7 +662,7 @@ const TimeTreeComponent = Ember.Component.extend({
   }),
 
   windowDidResize() {
-    this.notifyPropertyChange('maximumWidth');
+    //this.notifyPropertyChange('maximumWidth');
   }
 });
 
