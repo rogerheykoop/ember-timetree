@@ -255,7 +255,7 @@ const TimeTreeComponent = Ember.Component.extend({
   },
 
   // This function is passed to d3, it's not called as a member of the View
-  durationFormatter: ({ start, end }) => ((end - start) / (60*60*1000)) + 'h',
+  durationFormatter: ({ start, end }) => Math.round((end - start) / (60*60*1000)) + 'h',
 
   renderNodes() {
     let rootNode = this.get('rootNode');
