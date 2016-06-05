@@ -120,7 +120,7 @@ const TimeTreeComponent = Ember.Component.extend({
   }).property('contentWidth', 'contentMargin.left', 'contentMargin.right'),
 
   timeFormat: Ember.computed(function() {
-    return d3.time.format.utc('%H:%M:%S.%L');
+    return d3.time.format.utc('%d-%m-%Y %H:%M');
   }).property(),
 
   timeTickFormat: Ember.computed(function() {
